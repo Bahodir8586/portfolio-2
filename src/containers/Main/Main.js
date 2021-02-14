@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import FilterNavbar from "../../components/FilterNavbar/FilterNavbar";
+import ProductHolder from "../../components/ProductHolder/ProductHolder";
+
 class Main extends Component {
   state = {
     products: [
@@ -140,9 +143,16 @@ class Main extends Component {
         type: "drink",
       },
     ],
+    filter: "all",
   };
   render() {
-    return <main></main>;
+    // console.log(this.state.products);
+    return (
+      <main>
+        <FilterNavbar />
+        <ProductHolder products={this.state.products} />
+      </main>
+    );
   }
 }
 
