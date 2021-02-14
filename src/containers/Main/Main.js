@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import FilterNavbar from "../../components/FilterNavbar/FilterNavbar";
 import ProductHolder from "../../components/ProductHolder/ProductHolder";
+import * as images from "../../images";
 
 class Main extends Component {
   state = {
@@ -11,7 +12,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 45000,
-        imgSrc: null,
+        imgSrc: images.Gavaya,
         type: "pizza",
       },
       {
@@ -19,7 +20,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 53000,
-        imgSrc: null,
+        imgSrc: images.Mexica,
         type: "pizza",
       },
       {
@@ -27,7 +28,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 64000,
-        imgSrc: null,
+        imgSrc: images.HotAchchiko,
         type: "pizza",
       },
       {
@@ -35,7 +36,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 45000,
-        imgSrc: null,
+        imgSrc: images.Havai,
         type: "pizza",
       },
       {
@@ -43,7 +44,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 64000,
-        imgSrc: null,
+        imgSrc: images.Apocalipo,
         type: "pizza",
       },
       {
@@ -51,7 +52,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 45000,
-        imgSrc: null,
+        imgSrc: images.Sosiskacho,
         type: "pizza",
       },
       {
@@ -59,7 +60,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 53000,
-        imgSrc: null,
+        imgSrc: images.Mexico,
         type: "pizza",
       },
       {
@@ -67,7 +68,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 17000,
-        imgSrc: null,
+        imgSrc: images.Cheeseburger,
         type: "burger",
       },
       {
@@ -75,7 +76,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 18000,
-        imgSrc: null,
+        imgSrc: images.Chiliburger,
         type: "burger",
       },
       {
@@ -83,7 +84,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 15000,
-        imgSrc: null,
+        imgSrc: images.Hamburger,
         type: "burger",
       },
       {
@@ -91,31 +92,31 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 20000,
-        imgSrc: null,
+        imgSrc: images.Doubleburger,
         type: "burger",
       },
       {
-        name: "Kombo-1",
+        name: "Combo-1",
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 25000,
-        imgSrc: null,
+        imgSrc: images.Combo1,
         type: "combo",
       },
       {
-        name: "Kombo-2",
+        name: "Combo-2",
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 30000,
-        imgSrc: null,
+        imgSrc: images.Combo2,
         type: "combo",
       },
       {
-        name: "Kombo-3",
+        name: "Combo-3",
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 28000,
-        imgSrc: null,
+        imgSrc: images.Combo3,
         type: "combo",
       },
       {
@@ -123,7 +124,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 6000,
-        imgSrc: null,
+        imgSrc: images.Sprite,
         type: "drink",
       },
       {
@@ -131,7 +132,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 9000,
-        imgSrc: null,
+        imgSrc: images.CocaCola,
         type: "drink",
       },
       {
@@ -139,7 +140,7 @@ class Main extends Component {
         description:
           "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
         price: 6000,
-        imgSrc: null,
+        imgSrc: images.Fanta,
         type: "drink",
       },
     ],
