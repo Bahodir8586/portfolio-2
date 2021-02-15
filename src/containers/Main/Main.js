@@ -146,8 +146,8 @@ class Main extends Component {
     ],
     filter: "all",
   };
+
   render() {
-    // console.log(this.state.products);
     return (
       <main>
         <FilterNavbar />

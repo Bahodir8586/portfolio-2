@@ -1,0 +1,14 @@
+.filterElement {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+.active {
+  background-color: #f1b301;
+  border: 1px solid transparent;
+  border-radius: 27px;
+  padding: 10px 30px;
+  color: #fff;
+}

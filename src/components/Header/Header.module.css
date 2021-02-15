@@ -34,7 +34,14 @@ header li {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  letter-spacing: 1px;
   margin-right: 40px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header li:hover {
+  border-bottom: 1px solid black;
 }
 .rightPart {
   width: 36%;
@@ -61,6 +68,9 @@ header li {
   display: inline-block;
   padding-left: 20px;
   margin-right: 40px;
+}
+header svg {
+  cursor: pointer;
 }
 .basket {
   display: inline-block;
