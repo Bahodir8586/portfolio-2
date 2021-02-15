@@ -12,7 +12,6 @@ const productAd = (props) => {
   } else if (props.adType === "bestseller") {
     img = images.Rocket;
   }
-  console.log(img);
   return (
     <div className={classList.join(" ")}>
       <div className={classes.productAdStatus}>
