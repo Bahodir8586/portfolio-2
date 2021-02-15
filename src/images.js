@@ -26,8 +26,12 @@ import Pizza from "./assets/images/header/Pizza.png";
 import Fire from "./assets/images/header/Fire.png";
 import Rocket from "./assets/images/header/Rocket.png";
 
+import Path from "./assets/images/beforeFooter/Path.png";
+import Smartphone from "./assets/images/beforeFooter/Smartphone.png";
+
 export { Cheeseburger, Chiliburger, Doubleburger, Hamburger };
 export { Combo1, Combo2, Combo3 };
 export { CocaCola, Fanta, Sprite };
 export { Apocalipo, Gavaya, Havai, HotAchchiko, Mexico, Mexica, Sosiskacho };
 export { Burger, Combo, Logo, Pizza, Fire, Rocket };
+export { Path, Smartphone };
