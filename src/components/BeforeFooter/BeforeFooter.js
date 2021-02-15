@@ -41,8 +41,8 @@ const beforeFooter = (props) => {
         </svg>
         <strong>App Store</strong>
       </div>
-      <img src={images.Smartphone} />
-      <img src={images.Path} />
+      <img className={classes.smartphone} src={images.Smartphone} />
+      <img className={classes.path} src={images.Path} />
     </section>
   );
 };

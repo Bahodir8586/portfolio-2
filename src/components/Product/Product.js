@@ -3,7 +3,6 @@ import React from "react";
 import classes from "./Product.module.css";
 
 const product = (props) => {
-  console.log(props.product);
   return (
     <div className={classes.product}>
       <div className={classes.productImage}>
