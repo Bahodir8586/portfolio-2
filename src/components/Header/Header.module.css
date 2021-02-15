@@ -1,0 +1,89 @@
+header {
+  padding: 0 192px;
+  /* height: 875px; */
+  color: #222124;
+  background-image: linear-gradient(
+    90deg,
+    #fff 0%,
+    #fff 60%,
+    #800a74 40%,
+    #800a74 100%
+  );
+}
+.topNavbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  padding-top: 10px;
+}
+.leftPart {
+  width: 64%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 100%;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+header li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 40px;
+}
+.rightPart {
+  width: 36%;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.rightPart div:not(.phoneNumber, .basket) {
+  display: inline-flex;
+  align-items: center;
+}
+.rightPart span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.rightPart p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.phoneNumber {
+  display: inline-block;
+  padding-left: 20px;
+  margin-right: 40px;
+}
+.basket {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+header h2 {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 85px;
+  width: 440px;
+  margin-bottom: 14px;
+}
+.headerText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  width: 400px;
+  margin-bottom: 40px;
+}
+.bigBurger {
+  width: 800px;
+  position: absolute;
+  top: 120px;
+  left: 660px;
+}

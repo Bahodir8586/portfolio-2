@@ -5,6 +5,8 @@
   border: 1px solid transparent;
   border-radius: 12px;
   padding: 20px;
+  display: inline-block;
+  margin-right: 30px;
 }
 .new {
   background-image: linear-gradient(315.49deg, #ffc85c 1.32%, #f1b301 96.68%);
