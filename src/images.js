@@ -19,7 +19,15 @@ import Mexico from "./assets/images/pizzas/Mexico.png";
 import Mexica from "./assets/images/pizzas/Mexica.png";
 import Sosiskacho from "./assets/images/pizzas/Sosiskacho.png";
 
+import Burger from "./assets/images/header/Burger.png";
+import Combo from "./assets/images/header/Combo.png";
+import Logo from "./assets/images/header/Logo.png";
+import Pizza from "./assets/images/header/Pizza.png";
+import Fire from "./assets/images/header/Fire.png";
+import Rocket from "./assets/images/header/Rocket.png";
+
 export { Cheeseburger, Chiliburger, Doubleburger, Hamburger };
 export { Combo1, Combo2, Combo3 };
 export { CocaCola, Fanta, Sprite };
 export { Apocalipo, Gavaya, Havai, HotAchchiko, Mexico, Mexica, Sosiskacho };
+export { Burger, Combo, Logo, Pizza, Fire, Rocket };

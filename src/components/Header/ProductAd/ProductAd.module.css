@@ -1,0 +1,49 @@
+.productAd {
+  width: 256px;
+  height: 200px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+}
+.new {
+  background-image: linear-gradient(315.49deg, #ffc85c 1.32%, #f1b301 96.68%);
+}
+.new div {
+  background-color: #f7c747;
+}
+.new span {
+  color: #e76a06;
+}
+.bestseller {
+  background-color: #800a74;
+}
+.bestseller div {
+  background-color: #9a3c95;
+}
+.bestseller span {
+  color: #fc96f7;
+}
+.productAdStatus {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.productAdName {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 32px;
+  display: block;
+  margin: 50px auto 0;
+}
+.productAdImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
