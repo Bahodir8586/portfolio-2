@@ -21,9 +21,11 @@ class Modal extends Component {
   };
   orderHandler = () => {
     alert("You ordered !!!");
+    this.props.modalClosed();
+    this.props.onInitPurchasedProducts(this.props.products);
   };
   render() {
-    const products = this.props.products.filter((el) => {
+    const products = this.props.purchasedProducts.filter((el) => {
       return el ? el.number > 0 : null;
     });
     let rows = <p className={classes.startOrder}>Order foods from the menu</p>;
@@ -89,7 +91,8 @@ class Modal extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    products: state.purchasedProducts,
+    products: state.products,
+    purchasedProducts: state.purchasedProducts,
     price: state.price,
   };
 };
@@ -98,6 +101,8 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addProduct: (name) => dispatch(actions.addProduct(name)),
     removeProduct: (name) => dispatch(actions.removeProduct(name)),
+    onInitPurchasedProducts: (products) =>
+      dispatch(actions.initPurchasedProducts(products)),
   };
 };
 

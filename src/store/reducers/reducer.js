@@ -47,6 +47,7 @@ const reducer = (state = initialState, action) => {
     case actionTypes.INIT_PURCHASED_PRODUCTS:
       return {
         ...state,
+        price: 0,
         purchasedProducts: [...initializeBasket(action)],
       };
     case actionTypes.ADD_PRODUCT:

@@ -12,8 +12,8 @@ class Main extends Component {
     filteredProducts: [],
   };
   componentDidMount() {
-    this.filterProduct("all");
     this.props.onInitProducts();
+    this.filterProduct("all");
   }
 
   filterProduct = (type) => {
@@ -33,8 +33,6 @@ class Main extends Component {
   };
 
   render() {
-    // console.log(this.props.purchasedProducts);
-    // console.log(this.props.products);
     return (
       <main>
         <FilterNavbar clicked={(e) => this.onNavbarClickHandler(e)} />
@@ -45,9 +43,7 @@ class Main extends Component {
         <Modal
           show={this.props.purchasing}
           modalClosed={this.props.purchaseCanceled}
-        >
-          <p>Love me like you do</p>
-        </Modal>
+        ></Modal>
       </main>
     );
   }

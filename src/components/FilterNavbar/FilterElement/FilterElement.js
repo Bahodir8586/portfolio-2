@@ -1,13 +1,24 @@
-import { prependOnceListener } from "process";
 import React from "react";
 
 import classes from "./FilterElement.module.css";
 
+const addingActiveClass = (e) => {
+  let oldActive = document.getElementsByClassName(classes.active);
+  oldActive[0].classList.remove(classes.active);
+  e.target.classList.add(classes.active);
+};
+
 const filterElement = (props) => {
-  let classList = [classes.filterElement];
-  props.active ? classList.push(classes.active) : classList.push(null);
+  let classesList = [classes.filterElement];
+  props.active ? classesList.push(classes.active) : classesList.push(null);
   return (
-    <div className={classList.join(" ")} onClick={props.clicked}>
+    <div
+      className={classesList.join(" ")}
+      onClick={(event) => {
+        props.clicked(event);
+        addingActiveClass(event);
+      }}
+    >
       {props.children}
     </div>
   );
