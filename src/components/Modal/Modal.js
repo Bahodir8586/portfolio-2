@@ -19,10 +19,53 @@ class Modal extends Component {
   removeProduct = (name) => {
     this.props.removeProduct(name);
   };
+  orderHandler = () => {
+    alert("You ordered !!!");
+  };
   render() {
     const products = this.props.products.filter((el) => {
       return el ? el.number > 0 : null;
     });
+    let rows = <p className={classes.startOrder}>Order foods from the menu</p>;
+    let orderHeader = null;
+    let totalPrice = null;
+    let orderButton = null;
+    if (products.length > 0) {
+      orderHeader = (
+        <div className={classes.orderRow}>
+          <div className={classes.orderRowCol}>
+            <strong>Food</strong>
+          </div>
+          <div className={classes.orderRowCol}>Amount</div>
+          <div className={classes.orderRowCol}>Price</div>
+          <div className={classes.orderRowCol}></div>
+        </div>
+      );
+
+      rows = products.map((el) => {
+        return (
+          <OrderRow
+            name={el.name}
+            number={el.number}
+            price={(el.price * el.number).toFixed(2)}
+            add={() => this.addProduct(el.name)}
+            remove={() => this.removeProduct(el.name)}
+          />
+        );
+      });
+
+      totalPrice = (
+        <p className={classes.totalPrice}>
+          Total price: <strong>{this.props.price}</strong>
+        </p>
+      );
+
+      orderButton = (
+        <button className={classes.orderButton} onClick={this.orderHandler}>
+          Order
+        </button>
+      );
+    }
     return (
       <React.Fragment>
         <Backdrop show={this.props.show} clicked={this.props.modalClosed} />
@@ -34,17 +77,10 @@ class Modal extends Component {
           }}
         >
           <h2>Your Order</h2>
-          {products.map((el) => {
-            return (
-              <OrderRow
-                name={el.name}
-                number={el.number}
-                price={(el.price * el.number).toFixed(2)}
-                add={() => this.addProduct(el.name)}
-                remove={() => this.removeProduct(el.name)}
-              />
-            );
-          })}
+          {orderHeader}
+          {rows}
+          {totalPrice}
+          {orderButton}
         </div>
       </React.Fragment>
     );
@@ -54,6 +90,7 @@ class Modal extends Component {
 const mapStateToProps = (state) => {
   return {
     products: state.purchasedProducts,
+    price: state.price,
   };
 };
 

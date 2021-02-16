@@ -11,6 +11,51 @@
   box-sizing: border-box;
   transition: all 0.3s ease-out;
 }
+.Modal h2 {
+  text-align: center;
+}
+
+.startOrder {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.orderRow {
+  display: flex;
+  margin: 10px 0;
+}
+.orderRowCol {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  line-height: 24px;
+}
+.totalPrice {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+.orderButton {
+  margin: 25px auto 0;
+  padding: 8px 20px;
+  display: block;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #482ff7;
+  color: #482ff7;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.orderButton:hover,
+.orderButton:focus {
+  outline: none;
+  color: white;
+  background-color: #482ff7;
+}
 
 @media (min-width: 600px) {
   .Modal {
