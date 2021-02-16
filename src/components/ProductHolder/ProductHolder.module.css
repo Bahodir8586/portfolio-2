@@ -3,3 +3,11 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.title {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 63px;
+  text-align: center;
+  color: #222124;
+  text-transform: capitalize;
+}

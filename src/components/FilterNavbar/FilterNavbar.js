@@ -12,7 +12,7 @@ const filterNavbar = (props) => {
       <FilterElement clicked={props.clicked}>Pizza</FilterElement>
       <FilterElement clicked={props.clicked}>Burger</FilterElement>
       <FilterElement clicked={props.clicked}>Combo</FilterElement>
-      <FilterElement clicked={props.clicked}>Drinks</FilterElement>
+      <FilterElement clicked={props.clicked}>Drink</FilterElement>
     </div>
   );
 };

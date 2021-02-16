@@ -145,13 +145,37 @@ class Main extends Component {
       },
     ],
     filter: "all",
+    filteredProducts: [],
+  };
+
+  componentDidMount() {
+    this.filterProduct("all");
+  }
+
+  filterProduct = (type) => {
+    let filteredProducts = [];
+    if (type !== "all") {
+      filteredProducts = this.state.products.filter((el) => {
+        return el.type === type;
+      });
+    } else {
+      filteredProducts = this.state.products;
+    }
+    this.setState({ filteredProducts: [...filteredProducts], filter: type });
+  };
+  onNavbarClickHandler = (e) => {
+    const type = e.target.innerText.toLowerCase();
+    this.filterProduct(type);
   };
 
   render() {
     return (
       <main>
-        <FilterNavbar />
-        <ProductHolder products={this.state.products} />
+        <FilterNavbar clicked={(e) => this.onNavbarClickHandler(e)} />
+        <ProductHolder
+          products={this.state.filteredProducts}
+          title={this.state.filter}
+        />
       </main>
     );
   }
