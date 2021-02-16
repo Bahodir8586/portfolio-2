@@ -6,7 +6,7 @@ import classes from "./BeforeFooter.module.css";
 const beforeFooter = (props) => {
   return (
     <section className={classes.beforeFooter}>
-      <h3>Mobil ilovamiz orqali buyurtma berish yanada osonroq</h3>
+      <h3>It is much easier to order through our mobile app</h3>
       <div className={classes.downloadButton}>
         <svg
           width="41"

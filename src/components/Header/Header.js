@@ -16,8 +16,8 @@ const header = (props) => {
             </div>
             <ul>
               <li>Menu</li>
-              <li>Bolalar uchun</li>
-              <li>Filiallar</li>
+              <li>For kids</li>
+              <li>Branches</li>
             </ul>
           </div>
           <div className={classes.rightPart}>
@@ -68,7 +68,7 @@ const header = (props) => {
           </div>
         </div>
         <div>
-          <h2>Siz izlagan mazzali ta'mlar</h2>
+          <h2>The delicious flavors you are looking for</h2>
           <p className={classes.headerText}>
             When an unknown printer took a galley of type scrambled it to make a
             type specimen
@@ -76,14 +76,14 @@ const header = (props) => {
           <ProductAd
             imgSrc={images.Pizza}
             adType="new"
-            status={" Yangi"}
+            status={"New"}
             name="Pizza"
           />
 
           <ProductAd
             imgSrc={images.Combo}
             adType="bestseller"
-            status={" Ko'p sotilgan"}
+            status={"Bestseller"}
             name="Combo"
           />
         </div>

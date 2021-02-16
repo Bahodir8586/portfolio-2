@@ -12,13 +12,13 @@ const footer = (props) => {
           <img src={images.Logo} alt="Logo" />
         </div>
         <div className={classes.footerNavbarColumn}>
-          <h5>Asosiy</h5>
+          <h5>Main</h5>
           <Link to="/">About company</Link>
-          <Link to="/">Filials</Link>
+          <Link to="/">Branches</Link>
           <Link to="/">For kids</Link>
         </div>
         <div className={classes.footerNavbarColumn}>
-          <h5>Qo'shimcha</h5>
+          <h5>Additional</h5>
           <Link to="/">Menu</Link>
           <Link to="/">Bonus card</Link>
           <Link to="/">How does it work</Link>
@@ -27,7 +27,7 @@ const footer = (props) => {
           <h5>Contacts</h5>
           <p className={classes.phoneNumber}>(+998 97) 120-00-02</p>
           <p className={classes.address}>
-            100011, Toshkent sh. Shayxontohur tumani, Zarqaynar ko’chasi, 3B-uy
+            100011, Tashkent city, Shayxontohur region, Zarqaynar street 3B
           </p>
         </div>
       </div>
