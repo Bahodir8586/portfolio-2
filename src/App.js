@@ -8,12 +8,24 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 class App extends Component {
-  state = {};
+  state = {
+    purchasing: false,
+  };
+  purchaseHandler = () => {
+    this.setState({ purchasing: true });
+  };
+
+  purchaseCanceled = () => {
+    this.setState({ purchasing: false });
+  };
   render() {
     return (
       <div>
-        <Header />
-        <Main />
+        <Header purchasing={this.purchaseHandler} />
+        <Main
+          purchasing={this.state.purchasing}
+          purchaseCanceled={this.purchaseCanceled}
+        />
         <BeforeFooter />
         <Footer />
       </div>

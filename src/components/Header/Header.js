@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import ProductAd from "./ProductAd/ProductAd";
 import * as images from "../../images";
@@ -44,7 +45,7 @@ const header = (props) => {
               </div>
             </div>
             |
-            <div style={{ marginLeft: "40px" }}>
+            <div onClick={props.purchasing} style={{ marginLeft: "40px" }}>
               <svg
                 width="18"
                 height="21"
@@ -61,7 +62,7 @@ const header = (props) => {
               </svg>
               <div className={classes.basket}>
                 <p>Korzina</p>
-                <span>125,400 UZS</span>
+                <span>{props.price.toFixed(2)} UZS</span>
               </div>
             </div>
           </div>
@@ -94,4 +95,11 @@ const header = (props) => {
     </React.Fragment>
   );
 };
-export default header;
+
+const mapStateToProps = (state) => {
+  return {
+    price: state.price,
+  };
+};
+
+export default connect(mapStateToProps)(header);
