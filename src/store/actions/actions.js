@@ -44,20 +44,21 @@ export const fetchProductsFailed = () => {
 //Reaching out the web to get all product types we have
 export const initProducts = () => {
   return (dispatch) => {
-    axios.post(
-      "https://maxway-e7045-default-rtdb.firebaseio.com/products.json",
-      {
-        name: "Combo-1",
-        description:
-          "Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле",
-        price: 30000,
-        type: "combo",
-      }
-    );
     axios
       .get("https://maxway-e7045-default-rtdb.firebaseio.com/products.json")
       .then((response) => {
         const products = Object.values(response.data);
+        for (let key in products) {
+          // Removing - and spaces from names
+          const imgSrc = products[key].name
+            .replace(/\s+/g, "")
+            .replace("-", "");
+          console.log(imgSrc);
+          products[key] = {
+            ...products[key],
+            imgSrc: images[imgSrc],
+          };
+        }
         dispatch(setProducts(products)); // Setting gotten products to our state
         dispatch(initPurchasedProducts(products));
       })
